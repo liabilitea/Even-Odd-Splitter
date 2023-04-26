@@ -7,6 +7,10 @@ for line in basis_file:
     number = int(line.strip())
     numbers.append(number)
 
-#Write even and odd numbers to different files 
+#Separate even and odd numbers to different files 
+even_numbers = [num for num in numbers if num % 2 == 0]
+odd_numbers = [num for num in numbers if num % 2 != 0]
 
+#Write even and odd numbers to different files 
 #Use loop to evaluate each integer in the txt file
+
