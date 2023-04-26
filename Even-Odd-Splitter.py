@@ -14,9 +14,14 @@ odd_numbers = [num for num in numbers if num % 2 != 0]
 #Write even and odd numbers to different files 
 #Use loop to evaluate each integer in the txt file
 
-#Writing and separating even integers
+#Write and separate even integers
 with open("even.txt", "w") as even_file:
     for num in even_numbers:
         even_file.write(str(num) + "\n")
 
-        
+#Write and separate odd integers
+with open("odd.txt", "w") as odd_file:
+    for num in odd_numbers:
+        odd_file.write(str(num) + "\n")
+
+
