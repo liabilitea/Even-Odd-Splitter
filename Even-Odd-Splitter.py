@@ -2,10 +2,8 @@
 with open("numbers.txt", "r") as basis_file:
 
 #Remove the line break character from every line and convert string to integer
-    numbers = []
-for line in basis_file:
-    number = int(line.strip())
-    numbers.append(number)
+#Use list comprehension
+    numbers = [int(line.strip()) for line in basis_file]
 
 #Separate even and odd numbers as variables and use modulo
 even_numbers = [num for num in numbers if num % 2 == 0]
