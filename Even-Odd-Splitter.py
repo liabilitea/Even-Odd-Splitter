@@ -7,7 +7,7 @@ for line in basis_file:
     number = int(line.strip())
     numbers.append(number)
 
-#Separate even and odd numbers to different files 
+#Separate even and odd numbers as variables and use modulo
 even_numbers = [num for num in numbers if num % 2 == 0]
 odd_numbers = [num for num in numbers if num % 2 != 0]
 
